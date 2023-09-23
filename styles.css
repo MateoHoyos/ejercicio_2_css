@@ -1,0 +1,92 @@
+main{
+    display:grid;
+    grid-template-areas: 
+      "header header header"
+      "imagen1 imagen2 imagen3"
+      "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr; 
+  }
+
+header{
+  border:2px solid black;
+  background-color:rgba(137, 10, 10, 0.48);
+  text-align:center;
+  grid-area:header;
+  font-size:25px;
+  }
+
+
+.imagen1{
+  position: relative;
+  display: inline-block;
+  text-align:center;
+  grid-area:imagen1;
+  opacity: 1.0;
+ }
+
+.imagen2{
+  position: relative;
+  display: inline-block;
+  text-align:center;
+  grid-area:imagen2;
+  
+}
+
+.imagen3{
+  position: relative;
+  display: inline-block;
+  text-align:center;
+  grid-area:imagen3;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  color: #fff;
+ 
+}
+
+.imagen1:hover .overlay {
+  opacity: 1;
+}
+
+.imagen2:hover .overlay {
+  opacity: 1;
+}
+
+.imagen3:hover .overlay {
+  opacity: 1;
+}
+
+.overlay p {
+  font-family: "Poppins", sans-serif;
+  padding:10px;
+  font-weight: bold;
+}
+
+
+.overlay .caption{
+  font-size: 20px;
+}
+
+
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+footer{
+  border:2px solid black;
+  text-align:center;
+  background-color:rgba(39, 1, 1, 0.48);
+  font-size:25px;
+  grid-area:footer;
+  }
