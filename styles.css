@@ -5,14 +5,22 @@ main{
       "imagen1 imagen2 imagen3"
       "footer footer footer";
     grid-template-columns: 1fr 1fr 1fr; 
+    width:1000px;
+    height:400px;
+    
   }
 
 header{
   border:2px solid black;
-  background-color:rgba(137, 10, 10, 0.48);
+  border-radius: 10px;
+  background-color:rgba(227, 46, 46, 0.48);
   text-align:center;
   grid-area:header;
-  font-size:25px;
+
+  font-size:50px;
+  margin-bottom: 1%;
+  
+  
   }
 
 
@@ -22,6 +30,9 @@ header{
   text-align:center;
   grid-area:imagen1;
   opacity: 1.0;
+  margin:2%;
+  
+  
  }
 
 .imagen2{
@@ -29,6 +40,8 @@ header{
   display: inline-block;
   text-align:center;
   grid-area:imagen2;
+  margin:2%;
+ 
   
 }
 
@@ -37,6 +50,8 @@ header{
   display: inline-block;
   text-align:center;
   grid-area:imagen3;
+  margin:2%;
+  
 }
 
 .overlay {
@@ -49,6 +64,7 @@ header{
   opacity: 0;
   transition: opacity 0.2s ease;
   color: #fff;
+  
  
 }
 
@@ -66,8 +82,11 @@ header{
 
 .overlay p {
   font-family: "Poppins", sans-serif;
-  padding:10px;
+  
   font-weight: bold;
+
+  text-align:center;
+  margin: 30%;
 }
 
 
@@ -85,8 +104,11 @@ img {
 
 footer{
   border:2px solid black;
+  border-radius: 10px;
   text-align:center;
-  background-color:rgba(39, 1, 1, 0.48);
+  background-color:rgba(148, 229, 253, 0.48);
   font-size:25px;
   grid-area:footer;
+  margin:1%;
+ 
   }
